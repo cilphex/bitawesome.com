@@ -5,6 +5,8 @@ html(lang="en")
 		meta(name="Description", content="Bitcoin extension for Google Chrome")
 		meta(name="keywords", content="bitawesome, bitchrome, bitcoin, extension")
 		link(rel="stylesheet", type="text/css", href="/stylesheets/main.css")
+		link(rel="shortcut icon", href="/images/icon_16.png")
+			// Doesn't exist yet
 
 	body
 		div.content
@@ -12,3 +14,7 @@ html(lang="en")
 
 	footer
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+		script(src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js")
+		script(src="/javascripts/dummy_data.js")
+		script(src="/javascripts/main.js")
+		include ../components/analytics.html
