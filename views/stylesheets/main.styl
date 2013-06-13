@@ -1,50 +1,110 @@
 // Functions
 
 box-shadow()
-    -webkit-box-shadow arguments
-    -moz-box-shadow arguments
-    box-shadow arguments
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
 
 box-align()
-    -webkit-box-align arguments
-    -moz-box-align arguments
-    box-align arguments
+  -webkit-box-align arguments
+  -moz-box-align arguments
+  box-align arguments
 
 box-orient()
-    -webkit-box-orient arguments
-    -moz-box-orient arguments
-    box-orient arguments
+  -webkit-box-orient arguments
+  -moz-box-orient arguments
+  box-orient arguments
 
 box-flex()
-    -webkit-box-flex arguments
-    -moz-box-flex arguments
-    box-flex arguments
+  -webkit-box-flex arguments
+  -moz-box-flex arguments
+  box-flex arguments
 
 // styles
 
 html
-    margin 0
-    padding 0
+  margin 0
+  padding 0
 
 body
+  margin 0
+  padding 41px 0 0
+  font-family helvetica, arial, verdana, sans-serif
+  font-size 12px
+  color #555
+
+a,
+a:link,
+a:visited
+  color #369
+  text-decoration none
+
+a:hover,
+a:active
+  color #390
+
+h1,
+h2
+  margin-top 0
+
+div.header
+  position fixed
+  padding 0 10px
+  top 0
+  left 0
+  right 0
+  height 40px
+  background rgba(255,255,255,0.9)
+  border-bottom 1px solid #ddd
+
+  h1
+    line-height 40px
+
+  ul.links
+    float right
     margin 0
     padding 0
-    font-family helvetica, arial, verdana, sans-serif
-    font-size 12px
-    color #555
+    list-style none
 
-div.content
-    margin 20px auto
-    padding 20px
-    width 400px
-    background #f6f6f6
-    border-radius 5px
-    box-shadow 0 1px 3px rgba(0,0,0,0.25)
+    li
+      display inline-block
+      margin 0 5px
 
-    h1
-        &:first-child
-            margin 0 0 10px
+      a
+        display block
+        line-height 40px
 
-    canvas#depth
-        background #eee
-        //box-shadow 0 1px 3px rgba(0,0,0,0.25)
+section
+  padding 10px
+  border-bottom 1px solid #ddd
+
+  &:last-of-type
+    border-bottom none
+
+  div.options
+    float right
+
+  ul.option-toggle
+    display inline-block
+    margin 0 0 0 5px
+    padding 0
+    list-style none
+
+    li
+      display inline-block
+      margin 0 5px
+
+      a
+        display block
+
+  &#depth_canvas
+    background #eee
+
+    canvas
+      // nothing
+
+
+
+
+
+

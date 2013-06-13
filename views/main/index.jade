@@ -1,10 +1,25 @@
-h1 BitAwesome
+div.header
 
-p BitAwesome is an extension for Google Chrome that displays the current bitcoin exchange rate
+  ul.links
+    li: a(href="https://github.com/cilphex/bitcoin-price-extension", target="_blank") Chrome extension
+    li: a(href="https://github.com/cilphex/bitawesome.com", target="_blank") Source
 
-p You can find the source for the extension and this website here:
+  h1 BitAwesome
 
-p: a(href="https://github.com/cilphex/bitcoin-price-extension") BitAwesome Chrome extension
-p: a(href="https://github.com/cilphex/bitawesome.com") BitAwesome website
+section#depth_canvas
+  
+  div.options
+    | Range
 
-canvas#depth(width="400", height="300")
+    ul.option-toggle
+      li: a(href="#") $20
+      li: a(href="#") $60
+      li: a(href="#") $100
+      li: a(href="#") All
+
+  h2 Depth
+
+  canvas(width="600", height="450")
+
+section
+  p Hey, here's the footer.
