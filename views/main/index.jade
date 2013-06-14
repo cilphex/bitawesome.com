@@ -6,16 +6,23 @@ div.header
 
   h1 BitAwesome
 
-section#depth_canvas
+section#depth_canvas(ng-controller="DepthCtrl")
   
   div.options
     | Range
 
     ul.option-toggle
-      li: a(href="#") $20
-      li: a(href="#") $60
-      li: a(href="#") $100
-      li: a(href="#") All
+      li: a(ng-click="setRange(20)") $20
+      li: a(ng-click="setRange(60)") $60
+      li: a(ng-click="setRange(100)") $100
+      li: a(ng-click="setRange(-1)") All
+
+    //
+      ul.option-toggle
+        li: a(ng-click="setRange(10000)") B10k
+        li: a(ng-click="setRange(20000)") B20k
+        li: a(ng-click="setRange(40000)") B40k
+        li: a(ng-click="setRange(70000)") B70k
 
   h2 Depth
 
@@ -23,3 +30,7 @@ section#depth_canvas
 
 section
   p Hey, here's the footer.
+
+
+
+
